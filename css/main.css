@@ -586,6 +586,7 @@ h3{
     /*margin-left: -512px;*/
     width: 1024px;
     margin: 0 auto;
+    box-sizing: border-box;
     /*border-bottom: 2px solid #1f6bb0;*/
 }
 .footer__item{
@@ -671,25 +672,20 @@ h1.title {
 
 }
 
+.sides .aside, .sides .main {
+    float: left;
+    box-sizing: border-box;
+}
+
 .sides .aside {
     /*float: left;*/
     width: 280px;
 }
 
 .sides .main {
-    margin-left: -280px;
-}
-
-.flow {
-    
-}
-
-.flow .title {
-    font-family: "dincondmedium", Arial, Helvetica, sans-serif;
-    font-size:34px;
-    color:#000000;
-    line-height:38px;
-    text-align:left;
+    /*margin-left: -280px;*/
+    width: 622px;
+    padding: 0px 33px;
 }
 
 .product-info .label, .product-info .value {
@@ -716,6 +712,68 @@ h1.title {
     margin-bottom: 30px;
 }
 
+.flow {
+    
+}
+
+.flow-table {
+    display: table;
+    width: 100%;
+}
+
+.flow-row {
+    display: table-row;
+    height: 58px;
+}
+
+.flow-cell {
+    display: table-cell;
+    height: 58px;
+}
+
+.flow-cell.date {
+    width: 71px;
+}
+
+.flow-cell.progress {
+    width: 37px;
+}
+
+.flow-cell.progress:before {
+    background:#ff6600;
+    width:10px;
+    height:10px;
+    border-radius:100%;
+    content: " ";
+    display: block;
+    margin: 0 auto;
+}
+
+.flow-cell.progress:after {
+    background:#ff6600;
+    border:2px solid #ff6600;
+    width: 0px;
+    content: " ";
+    display: block;
+    margin: 0 auto;    
+    position: relative;
+    height: 58px;
+    left: 14px;
+    margin-left: -2px;
+}
+
+.flow-cell.description {
+    /*width: 71px;*/
+}
+
+.flow-title {
+    font-family: "dincondmedium", Arial, Helvetica, sans-serif;
+    font-size:34px;
+    color:#000000;
+    line-height:38px;
+    text-align:left;
+    margin-bottom: 24px;
+}
 
 /* */
 
