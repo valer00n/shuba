@@ -454,11 +454,32 @@ h3{
 */
 .header{}
 
-.header__menu{
-    overflow: hidden;
-    padding: 0 40px;
+/* new menu "engine" */
+ul.nav {
+    list-style: none;
 }
 
+ul.nav:before, ul.nav:after {
+  display: table;
+  content: " ";
+}
+
+ul.nav li {
+    list-style: none;
+    float: left;
+}
+
+ul.nav li a {
+    display: block;
+    padding: 0 14px;
+}
+
+.header__menu {
+    /*overflow: hidden;*/
+    padding: 0 33px;
+}
+
+/*TOP MENU*/
 .header__menu.top {
     margin-top: 20px;
     margin-bottom: 10px;
@@ -466,14 +487,21 @@ h3{
     line-height: 19px;
 }
 
-.header__menu.top {
-    height: 21px;
-    line-height: 21px;
+.header__menu-item.simple { /*For top*/
+    text-transform: none;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size:14px;
+    color:#1f6bb0;
+    line-height:18px;
+    text-align:left;    
 }
 
+.header__menu.bottom {
+    height: 30px;
+    line-height: 30px;
+}
 
 .header__menu-item{
-    margin: 14px;
     font-family: "dincondmedium", Arial, Helvetica, sans-serif;
     font-size: 18px;
     text-transform: uppercase;
@@ -481,13 +509,9 @@ h3{
     color:#1f6bb0;
 }
 
-.header__menu-item.simple{
-    text-transform: none;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size:14px;
-    color:#1f6bb0;
-    line-height:18px;
-    text-align:left;    
+.header__menu-item.active a{
+    color:#ffffff;
+    background-color:#ff6600;
 }
 
 .header__menu-item:first-child{
