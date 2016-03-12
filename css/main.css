@@ -33,7 +33,7 @@ body{
 .layout{
     width: 1024px;
     margin: 20px auto 0 auto;
-    padding-bottom: 49px;
+    /*padding-bottom: 49px;*/
     border: 1px solid #f1f1f1;
     border-radius: 3px;
 }
@@ -605,14 +605,12 @@ ul.nav li a {
     /*height: 45px;*/
     height: 302px;
     padding: 33px;
-    /*left: 50%;*/
-    bottom: 0;
-    /*margin-left: -512px;*/
-    width: 1024px;
-    margin: 0 auto;
-    box-sizing: border-box;
-    /*border-bottom: 2px solid #1f6bb0;*/
 }
+
+.footer, .footer * {
+    box-sizing: border-box;
+}
+
 .footer__item{
     float: left;
     cursor: pointer;
@@ -833,8 +831,22 @@ h1.title {
 
 /* */
 
-.footer .footer-inner {
+.footer {
+    position: relative;
+}
 
+.footer-bottom {
+    /*position: absolute;*/
+    width: 100%;
+    /*bottom: 21px;*/
+}
+
+.footer-bottom-help {
+    float: left;
+}
+
+.footer-bottom-copy {
+    float: right;
 }
 
 .contact-phone {
