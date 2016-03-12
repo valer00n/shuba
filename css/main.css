@@ -25,15 +25,15 @@
 */
 body{
     font-family: Arial, Helvetica, sans-serif;
-    font-size:12px;
+    font-size:14px;
     color:#231f20;
-    line-height:14px;
+    line-height:18px;
 
 }
 .layout{
     width: 1024px;
     margin: 20px auto 0 auto;
-    padding-bottom: 70px;
+    padding-bottom: 49px;
     border: 1px solid #f1f1f1;
     border-radius: 3px;
 }
@@ -470,6 +470,15 @@ h3{
     color:#1f6bb0;
 }
 
+.header__menu-item.simple{
+    text-transform: none;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size:14px;
+    color:#1f6bb0;
+    line-height:18px;
+    text-align:left;    
+}
+
 .header__menu-item:first-child{
     margin-left: 0;
 }
@@ -602,24 +611,34 @@ h3{
     position: relative;
 }
 
+h1.title {
+    font-size:50px;
+    color:#000000;
+    line-height:54px;
+    text-align:left;  
+    font-family: "dincondmedium", Arial, Helvetica, sans-serif;  
+    font-weight: normal;
+}
+
 .content .mark {
     border-radius: 18px;
     background-repeat: no-repeat;
     background-size: 100%;
     width: 230px;
     height: 152px;
-    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    box-shadow: -2px 2px 3px rgba(0,0,0,0.2);
     position: absolute;
-    top: 0;
+    top: 19px;
     right: 59px;
 
 }
 
 .content .highlight{
     background-color: #f8fbfd;
-    border-radius: 4px;
+    border-radius: 3px;
     border: 2px solid #e7f0f8;
     padding: 26px;
+    min-height: 371px;
 
 }
 
@@ -637,7 +656,15 @@ h3{
 }
 
 .flow {
+    
+}
 
+.flow .title {
+    font-family: "dincondmedium", Arial, Helvetica, sans-serif;
+    font-size:34px;
+    color:#000000;
+    line-height:38px;
+    text-align:left;
 }
 
 .product-info .label, .product-info .value {
@@ -650,6 +677,7 @@ h3{
     color:#000000;
     line-height:30px;
     text-align:left;
+    margin-bottom: 4px;
 }
 
 .product-info .value {
@@ -668,4 +696,27 @@ h3{
 
 .footer .footer-inner {
 
+}
+
+.contact-phone {
+    font-size:50px;
+    color:#1f6bb0;
+    line-height:54px;
+    text-align:left;
+    font-weight: normal;
+    font-family: "dincondmedium", Arial, Helvetica, sans-serif; 
+    margin-bottom: 10px; 
+}
+
+.contact-time {
+    color:#000000;
+    text-align:left;    
+}
+
+.contact-info {
+    color: #8b8b8b;
+    text-align: left;
+    font-style: italic;
+    display: block;
+    width: 416px;
 }
