@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8"/>
+        <link rel="stylesheet" href="css/normalize.css"/>
+        <link rel="stylesheet" href="css/pikaday.css"/>
+        <link rel="stylesheet" href="css/main.css"/>
+    </head>
+    <body>
+
+        <div class="layout">
+            <div class="header">
+
+                <div class="header__menu">
+                    <a href="#" class="header__menu-item">
+                        <img src="img/menu.png" width="16" height="14" alt=""/>
+                        Меню
+                    </a>
+                    <a href="#" class="header__menu-item">Главная</a>
+                    <a href="#" class="header__menu-item">Справка</a>
+                    <a href="#" class="header__menu-item">Лента событий</a>
+
+
+                    <div class="pull-right">
+                        <a href="#" class="header__menu-item">СЛОБОДСКОЕ МЕХОВОЕ ОБЪЕДИНЕНИЕ «БЕЛКА»</a>
+                        <a href="#" class="header__menu-item">ПРОФИЛЬ</a>
+                        <a href="#" class="header__menu-item">ВЫХОД</a>
+                    </div>
+                </div>
+
+
+                <div class="header__head">
+                    <a href="#" class="header__head-link">
+                        <img src="img/logo.png" height="56" width="53" alt="" class="header__head-img"/>
+                        ФЕДЕРАЛЬНАЯ <br/>
+                        НАЛОГОВАЯ СЛУЖБА
+                    </a>
+                    ГОСУДАРСТВЕННАЯ ИНФОРМАЦИОННАЯ СИСТЕМА МАРКИРОВКИ
+                </div>
+
+            </div>
+
+            <div class="content">
+                <h1>Заявка на включение продукции в реестр</h1>
+
+                <div class="scan-code">
+                    Возможен ввод данных со сканера штрих-кодов
+                </div>
+
+                <br/><br/>
+
+                <div class="input-box input-box_valid width-420">
+                    <label>Название</label>
+                    <input type="text" class="input" value="Полушубок из песца"/>
+                    <div class="input-box__message">Обязательно</div>
+                </div>
+
+
+                <br/><br/>
+
+                <div class="input-box input-box_invalid width-420">
+                    <label>Название</label>
+                    <input type="text" class="input" value=""/>
+                    <div class="input-box__message">Обязательно</div>
+                </div>
+
+                <br/><br/>
+
+                <div class="input-box width-420">
+                    <label>Название</label>
+                    <input type="text" class="input" value="ООО «Меха от серебрянного лиса» 007718721428/7718"/>
+                </div>
+
+                <br/><br/>
+
+                <div class="input-box width-420">
+                    <label>Страна происхождения товара</label>
+                    <div class="input-autocomplite" data-values='[
+                                {
+                                    "key": 1,
+                                    "value": "Республика конго",
+                                    "checked": true
+                                },
+                                {
+                                    "key": 3,
+                                    "value": "Республика корея"
+                                },
+                                {
+                                    "key": 99,
+                                    "value": "Россия"
+                                },
+                                {
+                                    "key": 90,
+                                    "value": "Руанда"
+                                },
+                                {
+                                    "key": 8,
+                                    "value": "Румыния"
+                                }
+                            ]'>
+                        <input type="text" class="input input_blue" placeholder="Выберите страну…"/>
+                    </div>
+                </div>
+
+                <br/><br/>
+
+                <div class="input-box width-420">
+                    <label>Дата</label>
+                    <input type="text" class="input input_date" value="" placeholder="ДД.ММ.ГГГГ"/>
+                </div>
+
+                <div class="switcher switcher_open">
+                    <h3>
+                        <span class="switcher__button">Дополнительно</span>
+                    </h3>
+                    <div class="switcher__box">
+
+
+                        <div class="input-box width-420">
+                            <label>Заказать индивидуализированные КиЗ</label>
+                            <br/>
+                            <label class="input-bool">
+                                <input type="checkbox" checked="checked"/>
+                            </label>
+                        </div>
+
+                        <br/><br/>
+
+                        <div class="input-box width-420">
+                            <label>Запомнить состояние</label>
+                            <br/>
+                            <label class="input-bool">
+                                <input type="checkbox"/>
+                            </label>
+                        </div>
+
+                        <br/><br/>
+
+                        <div class="input-box input-box_disabled width-420">
+                            <label>Заказать индивидуализированные КиЗ</label>
+                            <br/>
+                            <label class="input-bool">
+                                <input type="checkbox" disabled="disabled"/>
+                            </label>
+                        </div>
+
+
+                        <br/><br/>
+
+                        <div class="message-error">
+                            Заполните поле <a href="#">«Наименование товара»</a>, чтобы продолжить
+                        </div>
+
+                        <br/><br/>
+
+                        <div class="input-box">
+                            <label>Выберите подходящее</label><br/>
+
+                            <label class="input-check input-check_radio">
+                                <input type="radio" name="check"/>
+                                Вариант 1
+                            </label>
+
+                            <label class="input-check input-check_radio">
+                                <input type="radio" name="check"/>
+                                Вариант 2
+                            </label>
+
+                            <label class="input-check input-check_radio">
+                                <input type="radio" name="check"/>
+                                Вариант 3
+                            </label>
+                        </div>
+
+                        <br/><br/>
+
+                        <div class="input-box">
+                            <label>Выберите несколько</label>
+
+                            <label class="input-check">
+                                <input type="checkbox"/>
+                                Вариант 1
+                            </label>
+
+                            <label class="input-check">
+                                <input type="checkbox"/>
+                                Вариант 2
+                            </label>
+
+                            <label class="input-check">
+                                <input type="checkbox"/>
+                                Вариант 3
+                            </label>
+
+                        </div>
+
+                        <br/><br/>
+
+                        <a href="#" class="button button_orange">Отправить заявку</a>
+                        <button class="button">
+                            <img src="img/shield.png"/>
+                            Сохранить с ЭП
+                        </button>
+                        <span class="button button_disabled">Загрузить КиЗ из файла</span>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+
+        <div class="footer">
+            <div class="footer__item">
+                ГЛАВНАЯ
+            </div>
+
+            <div class="footer__item">
+                ИСПОЛНЕННЫЕ ЗАКАЗЫ
+            </div>
+
+            <div class="footer__item footer__item_close footer__item_active">
+                ПОСТУПЛЕНИЕ КИЗ
+            </div>
+
+            <div class="footer__item footer__item_close">
+                ВОЗВРАТ
+                <span>№123 002 783</span>
+            </div>
+
+            <div class="footer__item footer__item_close">
+                ВВОД В ОБОРОТ ПРОДУКЦИИ ТС
+            </div>
+
+            <div class="footer__item">
+                ИСПОЛНЕННЫЕ ЗАКАЗЫ
+            </div>
+
+            <div class="footer__item">
+                ИСПОЛНЕННЫЕ ЗАКАЗЫ
+            </div>
+        </div>
+
+
+        <script src="js/jquery-1.12.1.min.js"></script>
+        <script src="js/pikaday.js"></script>
+        <script src="js/main.js"></script>
+    </body>
+</html>
