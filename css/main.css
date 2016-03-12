@@ -719,6 +719,7 @@ h1.title {
 .flow-table {
     display: table;
     width: 100%;
+    position: relative;
 }
 
 .flow-row {
@@ -729,6 +730,7 @@ h1.title {
 .flow-cell {
     display: table-cell;
     height: 58px;
+    vertical-align: top;
 }
 
 .flow-cell.date {
@@ -738,15 +740,19 @@ h1.title {
 .flow-cell.progress {
     width: 37px;
 }
-
+/*
 .flow-cell.progress:before {
     background:#ff6600;
     width:10px;
     height:10px;
     border-radius:100%;
     content: " ";
-    display: block;
+    display: inline-block;
     margin: 0 auto;
+    position: relative;
+    top: 4px;
+    left: 14px;
+    vertical-align: top;
 }
 
 .flow-cell.progress:after {
@@ -754,12 +760,38 @@ h1.title {
     border:2px solid #ff6600;
     width: 0px;
     content: " ";
-    display: block;
-    margin: 0 auto;    
+    display: inline-block;
     position: relative;
     height: 58px;
-    left: 14px;
-    margin-left: -2px;
+    left: 5px;
+    top: 10px;
+    margin-left: 2px;
+    vertical-align: top;
+}*/
+
+.flow-cell.progress:before {
+    background:#ff6600;
+    width:10px;
+    height:10px;
+    border-radius:100%;
+    content: " ";
+    display: inline-block;
+    margin: 0 auto;
+    position: absolute;
+    left: 84px;
+    vertical-align: top;
+    margin-top: 4px;
+}
+
+.flow-row:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 88px;
+    height: 100%;
+    width: 2px;
+    background: #ff6600;
+    margin-top: 4px;
 }
 
 .flow-cell.description {
