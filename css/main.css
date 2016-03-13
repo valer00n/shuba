@@ -700,25 +700,29 @@ h1.title {
     border-radius: 3px;
     border: 2px solid #e7f0f8;
     padding: 26px;
-    min-height: 371px;
+    /*min-height: 371px;*/
 
 }
 
-.sides {
-
+.sides:before, .sides:after {
+  display: table;
+  content: " ";
+  clear: both;
 }
+
+
 
 .sides .aside, .sides .main {
     float: left;
     box-sizing: border-box;
 }
 
-.sides .aside {
+.product-info .sides .aside {
     /*float: left;*/
     width: 280px;
 }
 
-.sides .main {
+.product-info .sides .main {
     /*margin-left: -280px;*/
     width: 622px;
     padding: 0px 33px;
