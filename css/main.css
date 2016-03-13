@@ -774,6 +774,10 @@ h1.title {
     
 }
 
+#home-info .home-text {
+    width: 635px;
+}
+
 .flow {
     
 }
@@ -943,6 +947,10 @@ h1.title {
     border-left:2px solid #1f6bb0;
     border-top:2px solid #1f6bb0;
     border-bottom:2px solid #1f6bb0;
+
+    text-transform: uppercase;
+    font-family: "dincondmedium", Arial, Helvetica, sans-serif; 
+    font-size: 18px;
 }
 
 .user-submenu ul.nav li:first-child {
@@ -952,4 +960,17 @@ h1.title {
 .user-submenu ul.nav li:last-child {
     border-radius: 0 4px 4px 0;
     border-right:2px solid #1f6bb0;
+}
+
+.user-submenu ul.nav.fiz li {
+    border-radius: 4px !important;
+    width: 182px !important;
+}
+
+.user-submenu ul.nav li.active {
+    background:#1f6bb0;
+}
+
+.user-submenu ul.nav li.active a{
+    color: #ffffff;
 }
