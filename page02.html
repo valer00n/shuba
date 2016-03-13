@@ -9,10 +9,11 @@
 
         <div class="layout">
             <div class="header">
-
-                <div class="header__menu top">
-                    <div class="pull-right">
-                        <a href="#" class="header__menu-item simple">Вход в личный кабинет <span class="enter-icon"></span></a>
+                <div class="header__menu-bar">
+                    <div class="header__menu top">
+                        <div class="pull-right">
+                            <a href="#" class="header__menu-item simple">Вход в личный кабинет <span class="enter-icon"></span></a>
+                        </div>
                     </div>
                 </div>
 
@@ -25,17 +26,18 @@
                     </a>
                     ГОСУДАРСТВЕННАЯ ИНФОРМАЦИОННАЯ СИСТЕМА МАРКИРОВКИ
                 </div>
-
-                <ul class="header__menu bottom nav">
-                    <li class="header__menu-item active"><a href="#">Главная</a></li>
-                    <li class="header__menu-item"><a href="#">О маркировке</a></li>
-                    <li class="header__menu-item"><a href="#">Вопросы и ответы</a></li>
-                    <li class="header__menu-item"><a href="#">Новости</a></li>
-                    <li class="header__menu-item"><a href="#">Контакты</a></li>
-                    <li class="header__menu-item"><a href="#">Для разработчиков</a></li>
-                    <li class="header__menu-item"><a href="#">Техническая поддержка</a></li>
-                </ul>
-
+                
+                <div class="header__menu-bar">
+                    <ul class="header__menu bottom nav">
+                        <li class="header__menu-item active"><a href="#">Главная</a></li>
+                        <li class="header__menu-item"><a href="#">О маркировке</a></li>
+                        <li class="header__menu-item"><a href="#">Вопросы и ответы</a></li>
+                        <li class="header__menu-item"><a href="#">Новости</a></li>
+                        <li class="header__menu-item"><a href="#">Контакты</a></li>
+                        <li class="header__menu-item"><a href="#">Для разработчиков</a></li>
+                        <li class="header__menu-item"><a href="#">Техническая поддержка</a></li>
+                    </ul>
+                </div>
 
                 <div class="header__banner">
                     
@@ -44,15 +46,35 @@
             </div>
 
             <div class="content">
-                <section id="home-info">
-                    <div class="top-aside">
+                <section id="home-info" class="sides">
+                    <div class="home-aside aside">
                         <h1 class="title">С 1 апреля 2016 вся продукция из меха подлежит маркировке</h1>
-                        <p>Каждое меховое изделие должно быть снабжено контрольным идентификационным знаком (КиЗ) с информацией об изделии. Для работы с КиЗ требуется специальное оборудование.</p>
-                        <p>Производители, импортеры и продавцы обязаны маркировать свой товар и сообщать информацию о движениях товара в ГИС "Маркировка".</p>
-                        <p>Подробнее о маркировке</p>
+
+                        <div class="home-text">
+                            <p>Каждое меховое изделие должно быть снабжено контрольным идентификационным знаком (КиЗ) с информацией об изделии. Для работы с КиЗ требуется специальное оборудование.</p>
+                            <p>Производители, импортеры и продавцы обязаны маркировать свой товар и сообщать информацию о движениях товара в ГИС "Маркировка".</p>
+                            <p><a href="#">Подробнее о маркировке&nbsp;&nbsp;<img src="img/rarr.png" alt=""></a></p>
+                        </div>
+                    </div>
+
+                    <div class="top-main main">
+                        
                     </div>
                     
                 </section>
+
+                <div class="user-submenu menu-bar">
+                    <ul class="nav pull-left">
+                        <li><a href="#">Покупатель</a></li>
+                    </ul>
+                    <ul class="nav pull-right">
+                        <li><a href="#">Производитель</a></li>
+                        <li><a href="#">Импортёр</a></li>
+                        <li><a href="#">Оптовик</a></li>
+                        <li><a href="#">Продавец</a></li>
+                        <li><a href="#">Комиссионер</a></li>
+                    </ul>
+                </div>
 
                 <div class="highlight">
                     <div class="check-this-example">
