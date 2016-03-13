@@ -940,8 +940,9 @@ h1.title {
     text-align: center;
 
     background:#ffffff;
-    border:2px solid #1f6bb0;
-
+    border-left:2px solid #1f6bb0;
+    border-top:2px solid #1f6bb0;
+    border-bottom:2px solid #1f6bb0;
 }
 
 .user-submenu ul.nav li:first-child {
@@ -950,4 +951,5 @@ h1.title {
 
 .user-submenu ul.nav li:last-child {
     border-radius: 0 4px 4px 0;
+    border-right:2px solid #1f6bb0;
 }
