@@ -998,9 +998,17 @@ h1.title {
 }
 
 .case-jur {
-    height: 250px;
+    height: 210px;
     padding-left: 45px;
     position: relative;
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+
+.case-jur:before, .case-jur:after {
+    clear: both;
+    content: ' ';
+    display: table;
 }
 
 .case-jur .case-number {
@@ -1030,6 +1038,7 @@ h1.title {
     color:#000000;
     line-height:38px;
     text-align:left;
+    margin-top: 0;
 }
 
 .case-jur .case-warning {
@@ -1050,6 +1059,11 @@ h1.title {
     text-align:left;
 }
 
+.case-jur .case-warning ul {
+    padding-left: 13px;
+}
+
 .case-steps .step {
     width: 33%;
+    padding-right: 19px;
 }
