@@ -1187,3 +1187,172 @@ span.clock {
     position: relative;
     top: 4px;
 }
+
+/* From nalog.ru*/
+
+
+.download
+{
+    background: url('../img/download.png') right bottom no-repeat;
+    padding: 0 38px 0 20px;
+    margin: 20px 0;
+    border: 1px solid #e8eff2;
+}
+
+.dl_item
+{
+    background: url('../img/icon_download.png') 0 15px no-repeat;
+    padding: 15px 0 15px 55px;
+    line-height: 1.2em;
+}
+
+    .dl_item .gray
+    {
+        margin-top: 5px;
+    }
+
+    .dl_item > div
+    {
+        display: inline-block;
+        width: 68%;
+        vertical-align: top;
+        padding-top: 3px;
+    }
+
+        .dl_item > div + div
+        {
+            width: 30%;
+            text-align: right;
+            padding: 3px 0 0;
+        }
+
+.dl_button
+{
+    float: right;
+    margin: 0 3px 0 0;
+}
+
+/*------------- file types -------------*/
+
+.file_doc, .file_xls, .file_pdf, .file_zip, .file_type
+{
+    padding: 2px 0 2px 20px;
+    display: block;
+}
+
+.file_doc
+{
+    background: url('../img/file_types.png') 2px -150px no-repeat;
+}
+
+.file_xls
+{
+    background: url('../img/file_types.png') -33px -120px no-repeat;
+}
+
+.file_pdf
+{
+    background: url('../img/file_types.png') -68px -90px no-repeat;
+}
+
+.file_zip
+{
+    background: url('../img/file_types.png') -134px -30px no-repeat;
+}
+
+.file_type
+{
+    background: url('../img/file_types.png') -134px -30px no-repeat;
+}
+
+
+.div_more_download
+{
+    background: url('../img/download.png') right bottom no-repeat #e5f0fc;
+    padding: 25px 38px 25px 30px;
+    margin: 20px 0 0 0;
+}
+
+.note
+{
+    background: url('../img/icon_note.png') 15px center no-repeat #f2f2f2;
+    min-height: 40px;
+    padding: 20px 15px 20px 85px;
+    margin: 20px 0;
+}
+
+.blue_button {
+  background: url('../img/btn_blue.png') bottom repeat-x #007dc5;
+  padding: 8px 15px;
+  color: #fff;
+  border-radius: 4px;
+  border: 0;
+  cursor: pointer;
+  font: bold 1em arial;
+  vertical-align: middle;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.black
+{
+    color: #000 !important;
+}
+
+.gray
+{
+    color: #999 !important;
+}
+
+.blue
+{
+    color: #0066b3 !important;
+}
+
+.red
+{
+    color: #c50202;
+}
+
+.blue_back
+{
+    background-color: #e8f0f7 !important;
+}
+
+.caps {
+  text-transform: uppercase;
+}
+
+.show_more {
+  float: left !important;
+  padding: 0 22px 0 0;
+  clear: left;
+}
+
+.show_more {
+  float: right;
+  background: url('../img/arrow_down_gray.png') right center no-repeat;
+  padding: 0 22px 0 0;
+  clear: left;
+}
+
+
+.hide_more
+{
+    float: left !important;
+    padding: 0 22px 0 0;
+    clear: left;
+}
+
+.hide_more {
+  float: right;
+  background: url('../img/arrow_up_gray.png') right center no-repeat;
+  padding: 0 22px 0 0;
+  clear: left;
+}
+
+.div_more {
+  background: #e5f0fc;
+  padding: 25px 30px;
+  margin: 20px 0 10px;
+}

@@ -193,3 +193,86 @@ $('.input_date').each(function () {
         }
     });
 });
+
+// From nalog.ru
+
+
+/*------------------------ Spoiler  -----------------------------*/
+
+(function ($)
+{
+    $.fn.Spoiler = function (options)
+    {
+        var params = {
+            show: "&#1055;&#1086;&#1082;&#1072;&#1079;&#1072;&#1090;&#1100;&#32;&#1087;&#1086;&#1076;&#1088;&#1086;&#1073;&#1085;&#1086;&#1089;&#1090;&#1080;",
+            hide: "&#1057;&#1082;&#1088;&#1099;&#1090;&#1100;&#32;&#1087;&#1086;&#1076;&#1088;&#1086;&#1073;&#1085;&#1086;&#1089;&#1090;&#1080;"
+        }
+
+        if (options)
+        {
+            $.extend(params, options);
+        }
+
+        $(this).each(function (index, element)
+        {
+            var o = $(element);
+            o.hide();
+
+            var rnd = (new Date()).getMilliseconds() + "_" + Math.floor(Math.random() * (999999));
+
+            var todo = o.hasClass("open") ? "hide" : "show";
+
+            var onclickf = function ()
+            {
+                switchSpoiler(o.hasClass("open") ? "show" : "hide");
+                return false;
+            };
+
+            var switchSpoiler = function (todo)
+            {
+                if (todo == 'hide')
+                {
+                    $("#spoiler_" + rnd).show();
+                    o.addClass("open");
+
+                    $(".spoiler_btn_" + rnd).first().addClass("hide_more");
+                    $(".spoiler_btn_" + rnd).first().removeClass("show_more");
+                } else
+                {
+                    $("#spoiler_" + rnd).hide();
+                    o.removeClass("open");
+                    $(".spoiler_btn_" + rnd).first().removeClass("hide_more");
+                    $(".spoiler_btn_" + rnd).first().addClass("show_more");
+                }
+
+                $(".spoiler_btn_" + rnd).html(params[todo]);
+            };
+
+            if (o.parent().hasClass("with_icon"))
+            {
+                if (o.find(".dl_item").length > 0)
+                {
+                    o.parent().after("<div id=\"spoiler_" + rnd + "\" class=\"download div_more_download\">" + o.html() + "<div class=\"clear\"><br></div><a href=\"\" class=\"hide_more bigger spoiler_btn_" + rnd + "\">" + params[todo] + "</a><div class=\"clear\"></div></div>");
+                } else
+                {
+                    o.parent().after("<div id=\"spoiler_" + rnd + "\" class=\"div_more\">" + o.html() + "<div class=\"clear\"><br></div><a href=\"\" class=\"hide_more  spoiler_btn_" + rnd + "\">" + params[todo] + "</a><div class=\"clear\"></div></div>");
+                }
+
+                o.after('<a href="" class="hide_more spoiler_btn_' + rnd + '">' + params[todo] + '</a>');
+
+
+            } else
+            {
+                o.after("<div style='clear:both;'></div><div style=\"margin-top:10px;\" id=\"spoiler_" + rnd + "\" class=\"div_more\">" + o.html() + "<div class=\"clear\"><br></div><a href=\"\" class=\"hide_more  spoiler_btn_" + rnd + "\">" + params[todo] + "</a><div class=\"clear\"></div></div>");
+                o.after('<a href="" class="hide_more spoiler_btn_' + rnd + '">' + params[todo] + '</a>');
+            }
+            $(".spoiler_btn_" + rnd).click(onclickf);
+            switchSpoiler(todo);
+        });
+        return this;
+    };
+})(jQuery);
+
+$(function(){
+    $(".sp").Spoiler({});
+});
