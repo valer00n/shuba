@@ -629,7 +629,7 @@ ul.nav li a {
     z-index: 9;
     /*height: 45px;*/
     height: 302px;
-    padding: 33px;
+    padding: 20px 33px;
 }
 
 .footer, .footer * {
@@ -763,7 +763,7 @@ h1.title {
 }
 
 #home-info {
-
+    position: relative;
 }
 
 #home-info .home-aside {
@@ -776,6 +776,25 @@ h1.title {
 
 #home-info .home-text {
     width: 635px;
+}
+
+#home-info .home-marks {
+    position: absolute;
+    background-image: url(../img/marks.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    width: 348px;
+    height: 263px;
+    bottom: -14px;
+    right: -10px;
+}
+
+.highlight-fiz {
+    margin-bottom: 20px;
+}
+
+.about-kiz {
+    float: right;
 }
 
 .flow {
@@ -849,12 +868,18 @@ h1.title {
     margin-top: 4px;
 }
 
+.flow-cell.progress.end {
+    background-image: url(../img/flow-b.png);
+    background-position: center bottom;
+    background-repeat: no-repeat;
+}
+
 .flow-row:before {
     content: '';
     position: absolute;
     top: 0;
     left: 88px;
-    height: 100%;
+    height: 95%;
     width: 2px;
     background: #ff6600;
     margin-top: 4px;
@@ -892,6 +917,26 @@ h1.title {
 .footer-bottom-copy {
     float: right;
     font-weight: 400;
+}
+
+.footer .partner {
+    background:#ffffff;
+    box-shadow:0px 0px 4px 0px rgba(0,0,0,0.22);
+    width:418px;
+    height:103px;
+    position: absolute;
+    right: 33px;
+    top: 0;
+    box-sizing: border-box;
+    padding: 18px 20px;
+}
+
+.footer .partner .partner-title {
+    font-family: "dincondmedium", Arial, Helvetica, sans-serif;
+    font-size:34px;
+    color:#000000;
+    line-height:38px;
+    text-align:left;
 }
 
 .contact-phone {
@@ -998,7 +1043,7 @@ h1.title {
 }
 
 .case-jur {
-    height: 210px;
+    min-height: 210px;
     padding-left: 45px;
     position: relative;
     margin-top: 30px;
@@ -1039,6 +1084,7 @@ h1.title {
     line-height:38px;
     text-align:left;
     margin-top: 0;
+    margin-bottom: 20px;
 }
 
 .case-jur .case-warning {
@@ -1063,7 +1109,81 @@ h1.title {
     padding-left: 13px;
 }
 
+.case-steps:before {
+
+}
+
 .case-steps .step {
     width: 33%;
+    /*padding-right: 19px;*/
+    margin-bottom: 13px;
+    position: relative;
+}
+
+.step-progress.begin, .step-progress.middle, .step-progress.end {
+    display: block;
+    height: 10px;
+}
+
+.step-progress.begin:before, .step-progress.middle:before, .step-progress.end:before {
+    background:#ff6600;
+    width:10px;
+    height:10px;
+    border-radius:100%;
+    content: " ";
+    display: inline-block;
+    margin: 0 auto;
+    position: absolute;
+    left: 0;
+    vertical-align: top;
+    margin-top: 0px;
+    top: 37px;
+}
+
+.step-progress.begin:after, .step-progress.middle:after, .step-progress.end:after {
+    position: absolute;
+    height: 2px;
+    background-color: #ff6600;
+    display: block;
+    width: 100%;
+    top: 42px;
+    content: ' ';
+}
+
+.step-progress.end:after {
+    width: 95% !important;
+}
+
+.step-progress.end {
+    background-image: url(../img/flow-r.png);
+    background-position: right center;
+    background-repeat: no-repeat;
+}
+
+.step-description {
     padding-right: 19px;
+}
+
+.case-jur .step-title {
+    height: 24px;
+    font-family: "dincondmedium", Arial, Helvetica, sans-serif;
+    font-size:18px;
+    color:#ff6600;
+    line-height:24px;
+    text-align:center;    
+    margin-bottom: 13px;
+}
+
+span.clock {
+    display: inline-block;
+    background-image: url(../img/clock.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    width: 20px;
+    height: 24px;
+    content: ' ';
+    /*float: left;*/
+    margin-right: 10px;
+    position: relative;
+    top: 4px;
 }
