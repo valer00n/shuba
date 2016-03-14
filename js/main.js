@@ -274,5 +274,5 @@ $('.input_date').each(function () {
 })(jQuery);
 
 $(function(){
-    $(".sp").Spoiler({});
+    // $(".sp").Spoiler({});
 });
