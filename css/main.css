@@ -627,6 +627,18 @@ ul.nav li a {
     background-image: url(../img/banner.jpg);
     background-size: 100%;
     background-repeat: no-repeat;
+    position: relative;
+}
+
+.header__banner__button {
+    position: absolute;
+    top: 54px;
+    right: 32px;
+    width: 233px;
+    height: 65px;
+    display: block;
+    cursor: pointer;
+    outline : none;
 }
 
 .content{
